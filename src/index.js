@@ -21,7 +21,7 @@ function configurarCuadros($cuadros, imagenes) {
 
     imgRandom.forEach(function (imagen, i) {
         $cuadros[i].classList.add(imagen);
-        $cuadros[i].style.backgroundImage = "url(/imagenes/pball.png)";
+        $cuadros[i].style.backgroundImage = "url(imagenes/pball.png)";
     });
 }
 
@@ -69,14 +69,14 @@ function mostrarCuadro($cuadro, clase) {
 
 function ocultarCuadro($cuadro) {
     setTimeout(function () {
-        $cuadro.style.backgroundImage = "url(/imagenes/pball.png)"
+        $cuadro.style.backgroundImage = "url(imagenes/pball.png)"
     }, 500);
 }
 
 
 function eliminarCuadro($cuadro) {
     setTimeout(function () {
-        $cuadro.style.backgroundImage = "url(/imagenes/poke2.png)"
+        $cuadro.style.backgroundImage = "url(imagenes/poke2.png)"
         $cuadro.classList.add("completo");
         evaluarFinJuego();
     }, 500)
